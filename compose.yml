@@ -3,6 +3,8 @@ services:
     build:
       context: .
     image: cassioik/laravel-11-frankenphp:latest
+    deploy:
+      replicas: 2
     restart: always
     ports:
       - "80:80" # HTTP
