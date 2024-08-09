@@ -1,6 +1,8 @@
 services:
   php:
-    image: dunglas/frankenphp
+    build:
+      context: .
+    image: cassioik/laravel-11-frankenphp:latest
     restart: always
     ports:
       - "80:80" # HTTP
